@@ -52,14 +52,14 @@ describe('Working Sauce', function () {
 
     // Task III
     //Delared three different function for the task, when trying to chain the selenium commands together, receive element targeting error 
-    let clickEmail = await driver.findElement(By.id("fbemail"));
-        await clickEmail.sendKeys("ILoveSauceLabs@something.com");
+    //let clickEmail = await driver.findElement(By.id("fbemail"));
+        //await clickEmail.sendKeys("ILoveSauceLabs@something.com");
 
-    let clickComments = await driver.findElement(By.id("comments"));
-        await clickComments.sendKeys("I love the Sauce");
+    //let clickComments = await driver.findElement(By.id("comments"));
+        //await clickComments.sendKeys("I love the Sauce");
         
-    let button = await driver.findElement(By.id("submit"));
-        await button.click();
+    //let button = await driver.findElement(By.id("submit"));
+        //await button.click();
 
     await driver.quit();
     });
