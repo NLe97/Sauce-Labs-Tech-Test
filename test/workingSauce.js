@@ -42,8 +42,8 @@ describe('Working Sauce', function () {
 
     // Task I
     // Need to declare each selenium command as a function for each task
-    // let clickLink = await driver.findElement(By.id("i am a link"));
-        // await clickLink.click();
+    //let clickLink = await driver.findElement(By.id("i am a link"));
+        //await clickLink.click();
 
     // Task II
     //let clickSearch = await driver.findElement(By.name("i_am_a_textbox"));
@@ -51,15 +51,15 @@ describe('Working Sauce', function () {
         //await clickSearch.sendKeys("Sauce");
 
     // Task III
-    // Delared three different function for the task, when trying to chain the selenium commands together, receive element targeting error 
-    //let clickEmail = await driver.findElement(By.id("fbemail"));
-        //await clickEmail.sendKeys("ILoveSauceLabs@something.com");
+    //Delared three different function for the task, when trying to chain the selenium commands together, receive element targeting error 
+    let clickEmail = await driver.findElement(By.id("fbemail"));
+        await clickEmail.sendKeys("ILoveSauceLabs@something.com");
 
-    //let clickComments = await driver.findElement(By.id("comments"));
-        //await clickComments.sendKeys("I love the Sauce");
+    let clickComments = await driver.findElement(By.id("comments"));
+        await clickComments.sendKeys("I love the Sauce");
         
-    //let button = await driver.findElement(By.id("submit"));
-        //await button.click();
+    let button = await driver.findElement(By.id("submit"));
+        await button.click();
 
     await driver.quit();
     });
