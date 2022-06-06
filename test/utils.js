@@ -4,7 +4,7 @@ const brokenCapabilities = {
     'browserVersion': 'latest',
     'sauce:options': {
         'name': 'Broken Google Search',
-        'screenResolution': '1280x960'
+        'screenResolution': '1280x960',
     }
 };
 
